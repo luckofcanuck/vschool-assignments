@@ -1,0 +1,101 @@
+h1 {
+    color: #75BCFF;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px #ff0000;
+}
+
+
+html {
+    background-image: url(http://kingofwallpapers.com/mario-background/mario-background-001.jpg);
+}
+
+
+
+figcaption {
+    font-size: 15px;
+}
+
+* {
+    color: antiquewhite;
+}
+
+.coin {
+    max-width: 15px;
+    max-height: 15px;
+    border-width: none;
+    vertical-align: middle;
+    padding-left: 1px;
+    display: inline-block;
+}
+
+.img-thumbnail {
+    border-style: outset;
+    border-color: #75BCFF;
+    border-width: 5px;
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    color: antiquewhite;
+}
+
+.total-total {
+    padding: 20px;
+}
+
+button {
+    color: blue;
+}
+
+input {
+    color: black;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.finalBusiness {
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .baddie {
+        display: block;
+    }
+    
+    .column {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    
+    .price {
+        text-align: center;
+    }
+    
+    .userEntry {
+        text-align: center;
+    }  
+    
+    .finalBusiness {
+        margin-top: 30px;
+    }
+}
+
+
+

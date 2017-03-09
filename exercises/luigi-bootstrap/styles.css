@@ -1,0 +1,67 @@
+@font-face {
+    font-family: marioFont;
+    src: url(fonts/SuperMario256.ttf);
+}
+
+* {
+    font-family: marioFont;
+}
+
+#mushroom {
+    max-width: 50px;
+    vertical-align: middle;
+}
+
+
+#yellow-bar-top {
+    background-color: #FFC200;
+    height: 50px;
+    font-size: 40px;
+    color: red;
+}
+
+#yellow-bar {
+    background-color: #FFC200;
+    height: 60px;
+}
+
+#red-bar {
+    background-color: red;
+}
+
+#white-bar {
+    height: 150px;
+    text-align: center;
+    color: red;
+}
+
+h1 {
+    font-size: 130%;
+    padding-bottom: none;
+}
+
+@media screen and (max-width: 600px){
+    #yellow-bar-top {
+        text-align: center;
+    }
+    
+    #luigi {
+        max-width: 50%;
+    }
+    
+    br {
+        line-height: 1.5em;
+    }
+    
+    #white-bar {
+        font-size: 90%;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    #mushroom {
+        float: right;
+    }
+}
+

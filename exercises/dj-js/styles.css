@@ -1,0 +1,9 @@
+p {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    align-content: center;
+}

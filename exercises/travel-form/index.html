@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Form</title>
+</head>
+
+<body>
+  
+   <div class="row">
+       <div class="col-3">
+           First Name: <input type="text" name="first-name">
+       </div>
+       <div class="col-3">
+           Last Name: <input type="text" name="last-name">
+       </div>
+       <div class="col-3">
+           Age: <input type="number" name="age" id="age-input">
+       </div>
+       <div class="col-3">
+           Gender: Male <input type="radio" name="male">
+                   Female <input type="radio" name="female">
+                   Other <input type="radio" name="other">
+       </div>
+    </div>
+    
+    
+    <div class="row">
+       <div class="col-6">
+          Destination:
+           <select id="destinations">
+               <option "1" name="slc">Salt Lake City</option>
+               <option "2" name="provo">Provo</option>
+               <option "3" name="ogden">Ogden</option>
+               <option "4" name="panguitch">Panguitch</option>
+           </select>
+       </div>
+       <div class="col-6">
+           Dietary Restriction: 
+           <div>
+               Vegetarian<input type="checkbox" name="veg">
+               Cannibal<input type="checkbox" name="cannibal">
+               Airitairian<input type="checkbox" name="air">
+           </div>
+       </div>
+   </div>
+   
+   
+   <button onclick="printInfo()">Submit</button>
+    
+<script src="app.js"></script>
+</body>
+</html>

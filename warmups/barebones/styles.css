@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: aquamarine;
+    background-color: black;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    color: gray;
+}
+
+#otherp {
+    text-align: center;
+    color: blue;
+    padding: 20px;
+    background: -webkit-linear-gradient(left top,rgba(255,0,0,0),rgba(255,0,0,1));
+}

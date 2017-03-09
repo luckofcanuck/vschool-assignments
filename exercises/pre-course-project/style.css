@@ -1,0 +1,27 @@
+body {
+    font-family: Garamond;
+}
+
+h1 {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+* {
+    border-style: none;
+}
+
+#howto {
+    color: aqua;
+    border-color: none;
+}
+
+#p2 {
+    padding-top: 80px;
+}
+
+#here {
+    color: aqua;
+    background-color: white;
+    border-color: white;
+}

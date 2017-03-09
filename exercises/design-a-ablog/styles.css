@@ -1,0 +1,57 @@
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
+.newP {
+    line-height: 2em;
+}
+
+h1 {
+    padding-top: 200px
+}
+
+img {
+    max-width: 150px;
+    max-height: 100px;
+    position: relative;
+    float: left;
+    padding: 2px;
+    padding-right: 4px;
+}
+
+.post {
+    padding-left: 300px;
+    padding-right: 300px;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    text-align: right;
+}
+
+.date {
+    position: relative;
+    font-family: cursive;
+    color: black;
+    top: 10px;
+    left: 200px;
+}

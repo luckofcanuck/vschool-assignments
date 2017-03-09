@@ -1,0 +1,33 @@
+.titles {
+    font-family: Georgia;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+p {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#caps {
+    text-transform: uppercase;
+}
+
+img {
+    float: left;
+    padding-right: 10px;
+}
+
+ul {
+    list-style-position: inside;
+}

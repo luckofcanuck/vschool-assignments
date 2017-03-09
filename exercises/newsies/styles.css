@@ -1,0 +1,39 @@
+h1 {
+    font-size: 40px;
+    font-family: Times New Roman; 
+    font-stretch: expanded;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: #3A3B3B;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: "Arial";
+    padding-left: 40px;
+    color: #3A3B3B;
+}
+
+p {
+    display: inline-block;
+    width: 30%;
+    padding-left: 5px;
+    vertical-align: top;
+    color: #3A3B3B;
+}
+
+img {
+    width: 200px;
+    display: block;
+    border-style: outset;
+    border-width: 3px;
+    border-color: white;
+}
+
+html {
+    background: url(http://www.myfreetextures.com/wp-content/uploads/2011/06/another-rough-old-and-worn-parchment-paper.jpg);
+}
+
+#first {
+    padding-left: 40px;
+}

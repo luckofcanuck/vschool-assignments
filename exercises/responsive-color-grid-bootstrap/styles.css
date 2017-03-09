@@ -1,0 +1,44 @@
+
+
+#first {
+    height: 75px;
+    background-color: #F5C6D6;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+#dark {
+    height: 75px;
+    background-color: #EE2E84;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+
+#blue {
+    height: 75px;
+    background-color: #85CFD8;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#last {
+    height: 75px;
+    background-color: #8DC63F;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+#other {
+    background-color: #E76E34;
+    height: 75px;
+    border: 5px;
+    border-style: solid;
+    border-color: white;
+}
+

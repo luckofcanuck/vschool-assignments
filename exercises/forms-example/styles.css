@@ -1,0 +1,18 @@
+.col-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.guests {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.left {
+    
+}
+
+.leftchunk {
+    padding-top: 30px;
+}

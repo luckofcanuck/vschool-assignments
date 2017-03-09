@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+    <h1>Mario Pest Control</h1>
+   
+<div class="column">
+    <div class="baddie"><img src="https://www.ssbwiki.com/images/5/5d/Goomba-Brawl.png" class="img-thumbnail"><figcaption>GOOMBA</figcaption></div>
+    <div class="price">5 <img src="img/Gold-Coin.png" class="coin"> Per Catch</div>
+    <div class="userEntry">
+                            <input type = "text"
+                             class = "myText"
+                             placeholder = "# Caught"  id="goomba-amount"/>
+    </div>
+    <div>
+        <button onclick="goombaReward()">=</button>
+    </div>
+    <div id="goombaEntry"></div>
+</div>   
+       
+       
+<div class="column">
+    <div class="baddie"><img src="http://snipehuntmedia.com/wp-content/uploads/sites/2/2012/01/haz_globulorb017_JUN2011.jpg" class="img-thumbnail"><figcaption>BOB-OMB</figcaption></div>
+    <div class="price">7 <img src="img/Gold-Coin.png" class="coin"> Per Catch</div>
+    <div class="userEntry">
+        <input type = "text"
+        class = "myText"
+        placeholder = "# Caught"  id="bob-omb-amount"/>
+    </div>
+    <div>
+        <button onclick="bobReward()">=</button>
+    </div>
+    <div id="bobEntry"></div>
+</div>
+       
+              
+<div class="column">
+    <div class="baddie"><img src="http://alexboake.com/images/works/fandomfoodie/Alex_Boake_CheepCheep.jpg" class="img-thumbnail"><figcaption>CHEEP-CHEEP</figcaption></div>
+    <div class="price">11 <img src="img/Gold-Coin.png" class="coin"> Per Catch</div>
+    <div class="userEntry">
+        <input type = "text"
+        class = "myText"
+        placeholder = "# Caught"  id="cheep-cheep-amount"/>
+    </div>
+    <div>
+        <button onclick="cheepReward()">=</button>
+    </div>
+    <div id="cheepEntry"></div>
+</div>
+        
+ 
+<div class="finalBusiness">
+    <button onclick="haulTotal()">Final Haul</button>
+    <div id="total-total">
+    </div>
+    <img src="img/Gold-Coin.png" class="coin">
+</div>      
+
+
+    
+    
+    <footer>Contact Mario: plummingandturtles@mushrooms.net<br>www.mushroomsarefun.net<br>Luigi's Mansion: 123 Rainbow Road</footer>
+
+<script src="app.js"></script> 
+</body>
+</html>
