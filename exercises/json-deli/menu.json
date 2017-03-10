@@ -1,0 +1,62 @@
+{
+	"Appetizers": [
+		{
+			"name": "Hot Wings",
+			"ingredients": ["Chicken", "Sauce", "Celery"],
+			"description": "Take your mouth to flavor town with these spicy wang thangs."
+		},
+		{
+			"name": "Not Hot Wings",
+			"ingredients": ["Lettuce", "Spinach", "Kale"],
+			"description": "Leave flavor town behind for a staycation in boringsville with this sorry excuse for food."
+		}
+	],
+	"Cold Sandwiches": [
+		{
+			"name": "Club",
+			"ingredients": ["Bread", "Meat", "Cheese"],
+			"description": "Pretty much the same as any other club you've ever had."
+		},
+		{
+			"name": "BLT",
+			"ingredients": ["It's", "In", "The", "Name"],
+			"description": "Only one of these ingredients is good, and it's the only one you need."
+		}
+	],
+	"Hot Sandwiches": [
+		{
+			"name": "Burger",
+			"ingredients": ["Beef", "Cheese", "Tomato"],
+			"description": "Why get a McDouble for a dollar when you can spend 11.95 here?"
+		},
+		{
+			"name": "PBJ",
+			"ingredients": ["Peanut Butter", "Jelly"],
+			"description": "Why is it hot, you ask? Get it to find out. Disclaimer: It's not any good."
+		}
+	],
+	"Desserts": [
+		{
+			"name": "Hot Wings",
+			"ingredients": ["Ice Cream", "Sauce", "Chicken"],
+			"description": "Stay in flavor town with this zesty dessert."
+		},
+		{
+			"name": "Chicken Shake",
+			"ingredients": ["Same as the Hotwings, but all ground up!"],
+			"description": "Blended Hot Wings Dessert."
+		}
+	],
+	"Drinks": [
+		{
+			"name": "Pond Water",
+			"ingredients": ["Algae", "Hydrogen", "Oxygen"],
+			"description": "If you can drink this and the Chicken Shake your meal still isn't free."
+		},
+		{
+			"name": "Irish Car Bomb",
+			"ingredients": ["Bailey's", "Guiness", "IRA Membership"],
+			"description": "It's like a streetfight in your mouth."
+		}
+	]
+}

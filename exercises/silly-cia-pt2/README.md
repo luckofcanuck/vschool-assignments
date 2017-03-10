@@ -1,0 +1,1 @@
+I improved my CSS skills and learned to better manipulate HTML elements. 

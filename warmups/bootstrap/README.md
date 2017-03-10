@@ -1,0 +1,1 @@
+In this warmup I created a navbar, different sized buttons, and content using Bootstrap.

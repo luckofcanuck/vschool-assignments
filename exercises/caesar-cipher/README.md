@@ -1,0 +1,1 @@
+In this assignment I created a function that manipulates a user-given string to shift a user-given amount of letters in the alphabet, and logged to the console the new ciphered message.

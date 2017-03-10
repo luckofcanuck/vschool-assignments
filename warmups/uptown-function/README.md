@@ -1,0 +1,1 @@
+I practiced some methods of manipulating arrays. 

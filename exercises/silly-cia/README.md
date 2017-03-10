@@ -1,0 +1,1 @@
+In this assignment I learned to create various paragraphs, lists, headings, images, all within HTML. I improved basic formatting. 

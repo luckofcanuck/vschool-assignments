@@ -1,0 +1,1 @@
+In this assignment I made a newspaper-esque page with headers, background, text columns, and an integrated image.

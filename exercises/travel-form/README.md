@@ -1,0 +1,1 @@
+Here, I made a functional stylized form using HTML, CSS, and JavaScript. It takes in information using text boxes, drop-down menus, check boxes, and radio buttons. It prints the information to the user when a button is pressed. 

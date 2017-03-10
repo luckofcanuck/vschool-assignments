@@ -1,0 +1,1 @@
+Here I learned to use "div"s more effectively and learned to link my navbar to other pages I had written. 

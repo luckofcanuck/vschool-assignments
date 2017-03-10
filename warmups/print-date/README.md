@@ -1,0 +1,1 @@
+I learned some things with getDate() and similar functions.

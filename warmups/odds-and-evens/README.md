@@ -1,0 +1,1 @@
+In this warmup I demonstrated understanding of modulos and functions by having a function go through an array of numbers, check whether they are odd or even, and force them into their respective new arrays of odd numbers and even numbers.

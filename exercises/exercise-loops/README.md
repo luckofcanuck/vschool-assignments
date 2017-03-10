@@ -1,0 +1,1 @@
+I practiced creating loops for various simple purposes in this assignment.

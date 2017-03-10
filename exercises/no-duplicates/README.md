@@ -1,0 +1,1 @@
+In this assignment I created a function that looks through a given string and places letters into an array. If a letter has already been placed into the new array, and appears again in the original string, it pushes that letter into a "duplicates" array. This removes all duplicate letters from the string. 

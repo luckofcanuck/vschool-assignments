@@ -1,0 +1,1 @@
+Here I learned how to make functions in JavaScript.

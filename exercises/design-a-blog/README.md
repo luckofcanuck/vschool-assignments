@@ -1,0 +1,1 @@
+Here, I created a simple blog format. I practiced some positioning, some styling, and worked with images, navbars, and text to create a simply formatted webpage.

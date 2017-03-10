@@ -1,0 +1,1 @@
+I created this project before taking any courses on coding. Using only rudimentary introductions to HTML, CSS, and JavaScript from codecademy, I put together this simple website that showcased what I had learned. 

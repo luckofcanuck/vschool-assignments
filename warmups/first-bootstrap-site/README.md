@@ -1,0 +1,1 @@
+In this warmup I used a CDN to get a glyphicon, I used Bootstrap to design the page and make it responsive, and I used CSS to override attributes of Bootstrap that I didn't want. 

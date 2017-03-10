@@ -1,0 +1,1 @@
+For this warmup I practiced functions by creating an enemy generator that gives you one of three random enemies, and then assigns that enemy random HP.

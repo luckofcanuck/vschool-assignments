@@ -1,0 +1,1 @@
+In this assignment I learned and practiced JSON syntax making arrays and objects.

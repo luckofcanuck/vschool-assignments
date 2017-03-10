@@ -1,23 +1,29 @@
 var readlineSync = require("readline-sync");
 
-var input = readlineSync.question("What phrase would you like to encrypt?").toLowerCase();
-var shift = parseInt(readlineSync.question("How many letters would you like to shift?"));
+var string = readlineSync.question("What phrase would you like to encrypt?").toLowerCase();
+var howFarRemoved = parseInt(readlineSync.question("How many letters would you like to shift?"));
+var alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-var shiftedResponse = [];
 
-
-for (var i = 0; i < input.length; i++){
-	if (input.charCodeAt(i) < 65 || input.charCodeAt(i) > 90) {
-		shiftedResponse.push(input.charAt(i));
-	} else if (input.charCodeAt(i) > 77) {
-		shiftedResponse.push(String.fromCharCode(input.charCodeAt(i) - shift));
-	} else {
-		shiftedResponse.push(String.fromCharCode(input.charCodeAt(i) + shift));
+function caesarShift(string, howFarRemoved){
+	var newString = "";
+	for (var i = 0; i < string.length; i++){
+		var char = string[i];
+		var indexOfCharacter = alphabet.indexOf(char);
+		var newPosition = indexOfCharacter + howFarRemoved;
+		if (newPosition > 25){
+			newPosition = newPosition - 26;
+		}
+		var newCharacter = alphabet[newPosition];
+		if (indexOfCharacter === -1){
+			var char = string[i];
+			var newCharacter = char;
+		}
+		
+		newString += newCharacter;
 	}
+	return newString;
 }
 
 
-
-console.log(shiftedResponse.join(""));
-
-
+console.log(caesarShift(string, howFarRemoved));

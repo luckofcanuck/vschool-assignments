@@ -1,0 +1,1 @@
+For this assignment, I took an html file provided to me, and used CSS to style it in a way that makes it more aesthetically pleasing and highlights key elements for an appearance more suitable to functionality. 

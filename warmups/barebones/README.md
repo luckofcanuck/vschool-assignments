@@ -1,0 +1,1 @@
+In this warmup I practiced creating a barebones HTML file, and simple styling with CSS. 

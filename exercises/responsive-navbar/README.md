@@ -1,0 +1,1 @@
+In this assignment, I created gorgeous webpage with a navbar that changes given the screen size.

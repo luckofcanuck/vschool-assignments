@@ -1,0 +1,1 @@
+Here, I practiced functions, string, and array manipulation by making a function that pushes the index[0] of an array, then an entire string, then index[1], and the string agian, and on, and on.
