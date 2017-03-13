@@ -1,0 +1,1 @@
+In order to understand pulling data from an API and parsing the JSON objects, I built a simple button that uses a jQuery and JavaScript to list an attribute of each object on its own line in HTML.
