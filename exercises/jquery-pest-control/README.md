@@ -1,0 +1,1 @@
+I took an older project, and made it more interactive, and switched from plain JavaScript to jQuery. I provided a button that can switch between a darker theme and a lighter theme. 
