@@ -1,0 +1,1 @@
+I made a function that looks through a string, finds whether each letter is lower or uppercase, and changes it. I then return the string again, and everything that was uppercase is now lowercase, and vice versa. 
