@@ -1,0 +1,131 @@
+.navbar-nav > li {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.navbar {
+	margin-bottom: 10px;
+}
+
+body {
+	background-image: url(img/jakob-owens-221519.jpg);
+	background-size: cover;
+}
+
+.firstrow {
+	margin-top: 60px;
+}
+
+#cupcake {
+	float: left;
+	margin-right: 10px;
+}
+
+.otherrows {
+	margin-top: 30px;
+}
+
+.myheaders {
+	display: inline-block;
+    background-color: black;
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	font-size: 24px;
+	border: 2px solid white;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.mybodies {
+	display: inline-block;
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	border: 2px solid white;
+}
+
+#dark {
+    height: 75px;
+    background-color: #EE2E84;
+}
+
+
+#blue {
+    height: 75px;
+    background-color: #85CFD8;
+}
+
+#last {
+    height: 75px;
+    background-color: #8DC63F;
+}
+
+#other {
+    background-color: #E76E34;
+    height: 75px;
+}
+
+.navbar .navbar-brand {
+	color: white;
+}
+
+#blockimg {
+	display: block;
+	float: none;
+	width: 300px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#blockabout {
+	display: block;
+	text-align: center;
+}
+
+h1 {
+	padding-top: 80px;
+	text-align: center;
+	color: black;
+	text-shadow: 1px 1px grey;
+}
+
+#infobox {
+	font-size: 12px;
+	padding-bottom: 5px;
+	margin-top: 80px;
+	padding-top: 5px;
+}
+
+input {
+	margin-bottom: 10px;
+	width: 100px;
+}
+
+#contactimg {
+	width: 500px;
+	padding-top: 80px;
+}
+
+#infobox {
+	text-align: center;
+}
+
+#contactinfo {
+	text-align: center;
+}
+
+a {
+	color: lightblue;
+}

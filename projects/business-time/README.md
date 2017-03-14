@@ -1,0 +1,1 @@
+I created a sample website with multiple linked HTML pages. I use mostly bootstrap to format the page. CSS is used for personal styling and improving layout. 

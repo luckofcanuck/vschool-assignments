@@ -7,8 +7,24 @@ h1 {
     color: darkgreen;
 }
 
+h1:hover {
+	color: hotpink;
+	transition: all 1s ease-in-out
+}
+
 p {
     line-height: 25px;
+	color: black;
+}
+
+p:hover {
+	background-color: black;
+	transition: all 1s ease-in-out;
+}
+
+li:hover {
+	background-color: black;
+	transition: all 1s ease-in-out;
 }
 
 a {
@@ -26,6 +42,12 @@ a:hover {
 img {
     float: left;
     padding-right: 10px;
+}
+
+#spinme:hover {
+	transform: rotate(3600deg);
+	-webkit-transform: rotate(3600deg);
+	transition: all 3s ease-out;
 }
 
 ul {

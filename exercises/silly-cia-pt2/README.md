@@ -1,1 +1,1 @@
-I improved my CSS skills and learned to better manipulate HTML elements. 
+I improved my CSS skills and learned to better manipulate HTML elements. Also, I added some CSS transitions and animations to practice those, and make the silly-cia project even sillier.
