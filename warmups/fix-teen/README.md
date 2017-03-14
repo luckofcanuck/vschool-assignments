@@ -1,0 +1,1 @@
+In this warmup, I practiced making functions by creating one function that changes an integer's value if it fits certain criteria, and another that runs multiple integers through the first function, and returns the sum of their new values.
