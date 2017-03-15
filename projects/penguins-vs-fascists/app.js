@@ -46,9 +46,9 @@ function sendNuke(partyAttacking, onHit, onMiss) {
 	if (parties[0].Population > 0 && parties[1].Population > 0){
 		var nukeHitchance = Math.random()
 		if (nukeHitchance < .5) {
-			onMiss();
+			onMiss(partyAttacking, onHit, onMiss);
 		} else {
-			onHit();
+			onHit(partyAttacking, onHit, onMiss);
 		}
 	} else {
 		if (parties[0].Population > parties[1].Population){
@@ -64,9 +64,9 @@ function responseNuke(partyAttacking, onHit, onMiss) {
 	if (parties[0].Population > 0 && parties[1].Population > 0){
 		var nukeHitchance = Math.random()
 		if (nukeHitchance < .5) {
-			onMiss();
+			onMiss(partyAttacking, onHit, onMiss);
 		} else {
-			onHit();
+			onHit(partyAttacking, onHit, onMiss);
 		}
 	} else {
 		if (parties[0].Population > parties[1].Population){
@@ -77,7 +77,7 @@ function responseNuke(partyAttacking, onHit, onMiss) {
 	}
 }
 
-function onMiss() {
+function onMiss(partyAttacking, onHit, onMiss) {
 	console.log("The " + partyAttacking + " have sent their nuke and missed.");
 	if (partyAttacking == firstAttacker){
 		responseNuke(partyAttacking, onHit, onMiss);
@@ -87,7 +87,7 @@ function onMiss() {
 }
 
 
-function onHit() {
+function onHit(partyAttacking, onHit, onMiss) {
 	var damage = Math.floor(Math.random() * 100001) + 100000;
 	if (partyAttacking == firstAttacker && firstAttacker == "Penguins") {
 		parties[1].Population = (parties[1].Population - damage);
