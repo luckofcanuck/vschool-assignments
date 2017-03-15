@@ -1,0 +1,1 @@
+I developed a styled web page with an application that allows a user to add information to a table.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>High Score Haven</title>
+</head>
+
+
+<body>
+	<h1>HIGH SCORES!</h1>
+	<table id="datatable">
+		<tr>
+			<th>Player Name</th>
+			<th>Game Name</th>
+			<th>Score/Time</th>
+			<th>Date</th>
+			<th>Message</th>
+		</tr>	
+	</table>
+
+	<table class="formtable">
+		<tr class="formtr">
+			<td class="formtd">Your Name:</td>
+			<td class="formtd"><input type="text" id="playername"></td>
+		</tr>
+		<tr class="formtr">
+			<td class="formtd">Game Name:</td>
+			<td class="formtd"><input type="text" id="gamename"></td>
+		</tr>
+		<tr class="formtr">
+			<td class="formtd">Your Score:</td>
+			<td class="formtd"><input type="text" id="score"></td>
+		</tr>
+		<tr class="formtr">
+			<td class="formtd">When You Earned It:</td>
+			<td class="formtd"><input type="date" id="date"></td>
+		</tr>
+		<tr class="formtr">
+			<td class="formtd">Your Message:</td>
+			<td class="formtd"><input type="text" id="message"></td>
+		</tr>
+		<tr class="formtr">
+			<td class="formtd">Or, have a random message generated:</td>
+			<td class="formtd" class="checktd"><input type="checkbox" id="isit"></td>
+		</tr>
+	</table>
+	
+	<button type="button" id="submit">Submit</button>
+
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
