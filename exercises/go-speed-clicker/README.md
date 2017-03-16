@@ -1,0 +1,1 @@
+I built a simple page that uses session storage to keep track of a user's clicks.

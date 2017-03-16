@@ -1,0 +1,1 @@
+I made a function that counts to a hundred, but on every multiple of three it returns "fizz" and on multiples of five "buzz". If a number is divisible by each, it prints "fizzbuzz."

@@ -24,11 +24,7 @@ $("#post").click(function(){
 $("#get").click(function(){
 	$.get("http://api.vschool.io/tim/todo/", function(data){
 		for (var i = 0; i < data.length; i++) {
-			var div = document.createElement("div");
-			var txtNode = document.createTextNode(data[i]);
-			div.appendChild(txtNode);
-			var newList = document.getElementById(".result");
-			newList.appendChild(div);
+			$(".result").append(data);
 		}
 	});
 });
