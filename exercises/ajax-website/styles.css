@@ -12,20 +12,26 @@
 }
 
 li {
-	background-color: #C0FFB4;
-	border: 30px;
-	border-bottom: 15px;
-	border-top: 15px;
+	background-color: rgba(0, 0, 50, 0.2);
+	border: 10px;
 	border-style: solid;
-	border-color: #2BFF67;
+	border-color: rgba(0, 0, 100, 0.2);
+	margin-top: 10px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 html {
-	background-color: #27E827;
+	background-image: url(img/sergei-akulich-41840.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 form {
 	text-align: center;
+	width: 100%;
 }
 
 input {
@@ -48,6 +54,20 @@ input:hover {
 	background-color: white;
 }
 
-#completed:click {
-	background-color: black;
+#post {
+	background-color: orange;
+	color: darkblue;
+}
+
+.completed {
+	background-color: red;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	margin-bottom: 10px;
+	opacity: 0.8;
 }

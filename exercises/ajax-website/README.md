@@ -1,0 +1,1 @@
+This is my first AJAX website that allows a user to post and delete items on a todo list through an API.
