@@ -1,0 +1,1 @@
+Wrote a function to take a string seperated by either spaces, hyphens, or underscores, and change it to camelcase. 

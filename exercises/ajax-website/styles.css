@@ -1,0 +1,53 @@
+.todolist {
+	text-align: center;
+	list-style-type: none;
+}
+
+.todotitle {
+	
+}
+
+.todoinfo {
+	
+}
+
+li {
+	background-color: #C0FFB4;
+	border: 30px;
+	border-bottom: 15px;
+	border-top: 15px;
+	border-style: solid;
+	border-color: #2BFF67;
+}
+
+html {
+	background-color: #27E827;
+}
+
+form {
+	text-align: center;
+}
+
+input {
+	background-color: #FFE37E;
+	border-radius: 100px;
+	margin-left: 3px;
+}
+
+button {
+	background-color: #FFE37E;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: white;
+}
+
+input:hover {
+	background-color: white;
+}
+
+#completed:click {
+	background-color: black;
+}

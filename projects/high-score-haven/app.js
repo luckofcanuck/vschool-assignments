@@ -29,7 +29,3 @@ $("#submit").click(function(){
 	
 	$("#datatable tr:last").after("<tr><td>" + newName + "</td><td>" + newGame + "</td><td>" + newScore + "</td><td>" + newDate + "</td><td>" + newMessage + "</td></tr>");
 });
-
-
-
-
