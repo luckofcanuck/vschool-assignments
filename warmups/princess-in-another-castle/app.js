@@ -4,7 +4,7 @@ var statuses = ["Powered Up", "Big", "Small", "Dead"];
 var player = {
 	name: "",
 	totalCoins: 0,
-	status: statuses[0],
+	status: statuses[2],
 	star: false,
 	setName: function (namePicked) {
 		var namePicked = Math.random();
@@ -27,16 +27,13 @@ var player = {
 		}
 	},
 	gotPowerup: function () {
-		if (player.status == statuses[3]) {
-			player.status = statuses[2];
-			player.star = false;
-		} else if (player.status == statuses[2]) {
+		if (player.status == statuses[2]) {
 			player.status = statuses[1];
 			player.star = false;
 		} else if (player.status == 1) {
 			player.status = statuses[0];
 			player.star = false;
-		} else {
+		} else if (player.status = statuses[0]){
 			player.star = true;
 		}
 	},
@@ -52,7 +49,7 @@ var player = {
 	},
 	print: function () {
 		if (player.star == false) {
-			console.log("Name: " + player.name + ". Coins: " + player.totalCoins + ". Status: " + player.status + ". No star is active.");
+			console.log("Name: " + player.name + ". Coins: " + player.totalCoins + ". Status: " + player.status + ".");
 		} else {
 			console.log("Name: " + player.name + ". Coins: " + player.totalCoins + ". Status: " + player.status + ". You have a star!");
 		}
@@ -62,6 +59,7 @@ var player = {
 
 var playAGame = function () {
 	player.setName();
+	console.log("Your name is " + player.name);
 	playing();
 	function playing() {
 		if (player.status !== statuses[3]) {
