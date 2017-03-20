@@ -1,0 +1,1 @@
+I create a Mario simulator that gives a player an object with multiple attributes like coin total, size, whether or not a star is active, etc. I then write a function that simulates a game where sometimes Mario (or Luigi) gains a coin, gets hit or a powerup, until Mario dies. 
