@@ -1,1 +1,1 @@
-I used angular for the first time.
+I used angular for the first time. Used models and controllers and such things.
