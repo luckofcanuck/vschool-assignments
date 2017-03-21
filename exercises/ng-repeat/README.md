@@ -1,0 +1,1 @@
+I used an angular controller with an array of objects to print stats of the objects on an html page. 

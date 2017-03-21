@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="firstModule">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kill List</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body ng-controller="mainController">
+
+	<div ng-repeat="kill in player.kills">
+		<h1>Player Killed: {{kill.handle}}</h1>
+		<h1>Rank of Player: {{kill.rank}}</h1>
+		<h4>Clan of Killed Player: </h4>
+		<div ng-repeat="clanMems in kill.clan">
+			<h4>{{clanMems}}</h4>
+		</div>
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+
+</html>
