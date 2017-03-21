@@ -29,14 +29,16 @@
 
 /*
 #slideSpot {
-	height: 650px;
+	height: 50%;
 	margin-top: 0px;
+	overflow: hidden;
 }
 */
 
 .firstSlide {
     background-image: url(img/slide1.jpg);
 	background-size: 100%;
+	height: 100%;
 	background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -47,6 +49,7 @@
 	background-repeat: no-repeat;
     background-attachment: fixed;
 	background-position: center;
+	height: 100%;
 }
 
 .thirdSlide {
@@ -54,6 +57,7 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+	height: 100%;
 }
 
 .fourthSlide {
@@ -61,6 +65,7 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+	height: 100%;
 }
 
 #email {
@@ -119,4 +124,30 @@
 	#slideSpot{
 		height: 500px;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }

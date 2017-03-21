@@ -7,7 +7,11 @@ app.controller("mainController", ["$scope", function($scope){
 	}
 	
 	$scope.whosThere = function(){
-		return $scope.person.name + " is here and is " + " tall."
+		return $scope.person.name + " is here and is " + $scope.person.height +  " tall."
+	}
+	
+	$scope.words = function(){
+		return $scope.rightHere;
 	}
 	
 }])
