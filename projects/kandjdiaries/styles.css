@@ -1,0 +1,123 @@
+.navbar-nav > li {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.navbar {
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+#magnify {
+	margin-top: 10px;
+	background-image: url(img/search.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 16px;
+}
+
+#slideSpot {
+	height: 650px;
+	margin-top: 0px;
+}
+
+.firstSlide {
+    background-image: url(img/slide1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: bottom;
+}
+
+.secondSlide {
+    background-image: url(img/slide2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: bottom;
+}
+
+.thirdSlide {
+    background-image: url(img/slide3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: top;
+}
+
+.fourthSlide {
+    background-image: url(img/slide4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: top;
+}
+
+#email {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	width: 250px;
+}
+
+#pinkEmail{
+	height: 75px;
+	background-color: #FFD9C5;
+}
+
+
+
+
+
+
+@media (max-width: 860px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	#slideSpot{
+		height: 500px;
+	}
+}
