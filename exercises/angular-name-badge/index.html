@@ -35,7 +35,7 @@
 	</div>
 
 	
-	<div class="well created" ng-repeat="badge in badges">
+	<div class="well created" ng-class-odd="'otherCreated'" ng-repeat="badge in badges track by $index">
 		<div class="row">
 			<h4>HELLO! MY NAME IS:</h4></div>
 		<div class="row">
@@ -53,6 +53,7 @@
 		<div class="row">
 			<div class="madeInput" id="bioo">{{badge.bio}}</div>
 		</div>
+		<button ng-click="delete($index)">x</button>
 	</div>
 
 

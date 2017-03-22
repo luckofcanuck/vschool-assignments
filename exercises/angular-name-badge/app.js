@@ -9,5 +9,10 @@ app.controller("myController", ["$scope", function($scope){
 		$scope.newBadge = {};
 	}
 	
+	
+	
+	$scope.delete = function(i) {
+		$scope.badges.splice(i, 1);
+	}
 }])
 

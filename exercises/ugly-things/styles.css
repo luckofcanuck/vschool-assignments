@@ -1,0 +1,52 @@
+.entryBar {
+	background-color: rgb(15, 4, 107);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.bodyContainer {
+	background-color: rgba(225, 225, 0, 0.2);
+	width: 400px;
+	height: 400px;
+	color: white;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.images {
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+}
+
+.titles {
+	text-align: center;
+}
+
+.descriptions {
+	text-align: center;
+}
+
+body {
+	background-image: url(img/eric-micheal-34369.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	color: black;
+}
+
+.deleting {
+	border-radius: 50%;
+}

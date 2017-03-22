@@ -70,6 +70,23 @@
 	background-color: #FFD9C5;
 }
 
+.line {
+	border: 1px solid grey;
+	width: 80px;
+	height: 1px;
+	color: black;
+	background-color: black;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.date {
+	display: inline-block;
+	line-height: 2em;
+	color: grey;
+	text-align: center;
+}
+
 
 
 
@@ -140,3 +157,8 @@
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+
+
+
+
