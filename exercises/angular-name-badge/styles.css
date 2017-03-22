@@ -5,6 +5,21 @@ input{
 	margin: 5px;
 }
 
+.well {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%
+}
+
+.created {
+	background-color: red;
+}
+
+.created h4 {
+	color: white;
+}
+
 .bioID {
 	width: 85%;
 	height: 200px;

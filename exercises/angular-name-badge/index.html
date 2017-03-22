@@ -12,33 +12,51 @@
 	<div class="container">
 		<div class="well">
 			<div class="row">
-					<input type="text" placeholder="First Name" ng-model="firstName" class="lefty">
-					<input type="text" placeholder="Last Name" ng-model="lastName" class="pull-right">
+				<input type="text" placeholder="First Name" ng-model="newBadge.firstName" class="lefty">
+				<input type="text" placeholder="Last Name" ng-model="newBadge.lastName" class="pull-right">
 			</div>
 			<div class="row">
-					<input type="text" placeholder="Email" ng-model="email" class="lefty">
-					<input type="text" placeholder="Place of Birth" ng-model="birthPlace" class="pull-right">
+				<input type="text" placeholder="Email" ng-model="newBadge.email" class="lefty">
+				<input type="text" placeholder="Place of Birth" ng-model="newBadge.birthPlace" class="pull-right">
 			</div>
 			<div class="row">
-					<input type="text" placeholder="Phone" ng-model="phone" class="lefty">
-					<input type="text" placeholder="Favorite Food" ng-model="food" class="pull-right">
+				<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="Phone" ng-model="newBadge.phone" class="lefty">
+				<input type="text" placeholder="Favorite Food" ng-model="newBadge.food" class="pull-right">
 			</div>
 			<div class="row">
-					<input type="text" placeholder="Tell us about yourself." ng-model="bio" class="bioID">
+				<input type="text" placeholder="Tell us about yourself." ng-model="newBadge.bio" class="bioID">
 			</div>
 			<div class="row">
-				<button class="submit" ng-click="submission()" onclick="newThingy()">Submit</button>
+				<button class="submit" ng-click="submission(newBadge)" ng-disabled="!(!!newBadge.firstName && !!newBadge.lastName  && !!newBadge.email && !!newBadge.birthPlace && !!newBadge.phone && !!newBadge.food && !!newBadge.bio)">Submit</button>
 			</div>
 		</div>
-		
+
 		<div class="newspot"></div>
 	</div>
-	
 
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+	
+	<div class="well created" ng-repeat="badge in badges">
+		<div class="row">
+			<h4>HELLO! MY NAME IS:</h4></div>
+		<div class="row">
+			<div class="madeInput">{{badge.firstName}}</div>
+			<div class="madeInput pull-right">{{badge.lastName}}</div>
+		</div>
+		<div class="row">
+			<div class="madeInput">{{badge.email}}</div>
+			<div class="madeInput pull-right">{{badge.birthPlace}}</div>
+		</div>
+		<div class="row">
+			<div class="madeInput">{{badge.phone}}</div>
+			<div class="madeInput pull-right">{{badge.food}}</div>
+		</div>
+		<div class="row">
+			<div class="madeInput" id="bioo">{{badge.bio}}</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 </body>
 
