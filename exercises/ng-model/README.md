@@ -1,0 +1,1 @@
+I use the ng-model to have three input boxes on an html page display their three unique inputs somewhere else on the page. 

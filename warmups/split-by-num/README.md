@@ -1,0 +1,1 @@
+Wrote a function that splits an array into smaller arrays of a given size. 
