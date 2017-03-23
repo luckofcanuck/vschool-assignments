@@ -2,7 +2,7 @@ var str = "ggggggggxkljfvlsjkfg";
 
 function firstRepeat(str){
 	for (var i = 1; i < str.length; i++){
-		if (str[i] !== str[i-1]){
+		if (str[i] !== str[i-1] && str[i] !== str[i + 1]){
 			console.log(str[i]);
 			break;
 		}
@@ -10,4 +10,4 @@ function firstRepeat(str){
 }
 
 firstRepeat(str);
-firstRepeat("jjjjjlmnasdnvoi");
+firstRepeat("jjjjmmmnlmnasdnvoi");

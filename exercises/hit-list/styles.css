@@ -1,0 +1,52 @@
+img {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin-bottom: 80px;
+	border: 2px solid black;
+	border-style: inset;
+	border-radius: 5px;
+}
+
+
+figcaption {
+	font-size: 20px;
+	position: absolute;
+	top: 220px;
+	background-color: rgba(200, 200, 200, 0.9);
+	width: 250px;
+	text-align: center;
+	color: darkred;
+	padding-bottom: 2px;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.navImg {
+	width: 150px;
+	height: 75px;
+	border: none;
+	border-radius: 0px;
+	margin: 0px;
+}
+
+nav {
+	height: 110px;
+}
+
+.navbar-text {
+	margin-top: 40px;
+	font-size: 16px;
+	color: darkred;
+}
+
+.container {
+	margin-top: 150px;
+}
+
+body {
+	background-image: url("http://murstone.com/yahoo_site_admin/assets/images/Red_JasperDetailant.30185756_large.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
