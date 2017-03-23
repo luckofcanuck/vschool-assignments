@@ -1,0 +1,89 @@
+input {
+	margin: 5px;
+	margin-left: 25px;
+	width: auto;
+	border-style: inset;
+	border: 2px solid lightgrey;
+}
+
+form {
+	width: 100%;
+	background-color: rgba(50, 200, 50, 0.5);
+	height: 75px;
+	position: fixed;
+	z-index: 1;
+}
+
+.submit {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	width: 100px;
+}
+
+body {
+	background-image: url("http://media.salemwebnetwork.com/cms/CW/family/12821-to-do-list.1200w.tn.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+img {
+	display: block;
+	width: 450px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.newEntry {
+	width: 470px;
+	background-color: saddlebrown;
+	margin-bottom: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid tan;
+	position: relative;
+}
+
+.delete {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: rgba(0,0,0,0.2);
+	color: red;
+	border-color: tan;
+}
+
+.complete {
+	position: absolute;
+	top: 10px;
+	left: 35px;
+	background-color: rgba(0,0,0,0.5);
+	color: green;
+	border-color: tan;
+}
+
+h4 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+
+
+.invis {
+	height: 120px;
+}
+
+.red {
+	text-decoration: line-through;
+	color: red;
+}

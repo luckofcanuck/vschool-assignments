@@ -1,0 +1,1 @@
+I use angular to get, post, and delete items from an api on a simple webpage. 

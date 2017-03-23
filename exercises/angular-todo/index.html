@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+</head>
+
+
+<body ng-controller="myController">
+	<div class="form">
+		<form>
+			<div class="row">
+				<div class="col-xs-3">
+					<input placeholder="Title" ng-model="newTodo.title">
+				</div>
+				<div class="col-xs-3">
+					<input placeholder="Price" ng-model="newTodo.price">
+				</div>
+				<div class="col-xs-3">
+					<input placeholder="Description" ng-model="newTodo.description">
+				</div>
+				<div class="col-xs-3">
+					<input placeholder="ImgURL (opt)" ng-model="newTodo.imgUrl">
+				</div>
+				<button class="submit" ng-click="submission(newTodo)">Submit</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="invis"></div>
+
+
+
+
+	<div class="container entries">
+		<div class="row">
+			<div ng-repeat="todo in todos track by $index" class="newEntry">
+				<span class="image"><img ng-src="{{todo.imgUrl}}"/></span>
+				<figcaption>
+					<span class="title"><h4>{{todo.title}}</h4></span>
+					<span class="price"><p>{{todo.price}}</p></span>
+					<span class="description"><p>{{todo.description}}</p></span>
+					<button class="delete" ng-click="delete($index, item)">X</button>
+					<button class="complete" ng-click="toggle = !toggle" ng-class="{'red' : toggle}">DONE</button>
+				</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
