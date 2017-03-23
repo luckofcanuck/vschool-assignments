@@ -1,0 +1,1 @@
+Wrote a function that goes through a string and finds when letters in that string stop repeating, and a new one is present. It logs the novel letter to the console.
