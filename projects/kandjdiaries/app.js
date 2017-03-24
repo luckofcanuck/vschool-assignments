@@ -16,5 +16,3 @@
 //
 //setInterval(changeClass, 5000);
 //
-
-

@@ -19,6 +19,7 @@
 	margin-bottom: 0px;
 }
 
+
 #magnify {
 	margin-top: 10px;
 	background-image: url(img/search.svg);
@@ -28,34 +29,6 @@
 }
 
 
-
-.firstSlide {
-    background-image: url(img/slide1.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	max-height: 600px;
-}
-
-.secondSlide {
-    background-image: url(img/slide2.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	max-height: 600px;
-}
-
-.thirdSlide {
-    background-image: url(img/slide3.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	max-height: 600px;
-}
-
-.fourthSlide {
-    background-image: url(img/slide4.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	max-height: 600px;
-}
 
 #email {
 	display: block;
@@ -90,6 +63,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+	#magnify {
+		display: none;
+	}
+}
 
 
 @media (max-width: 860px) {
@@ -131,9 +120,6 @@
 		height: 500px;
 	}
 }
-
-
-
 
 
 

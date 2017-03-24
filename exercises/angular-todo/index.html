@@ -32,19 +32,31 @@
 
 	<div class="invis"></div>
 
-
-
-
 	<div class="container entries">
 		<div class="row">
 			<div ng-repeat="todo in todos track by $index" class="newEntry">
 				<span class="image"><img ng-src="{{todo.imgUrl}}"/></span>
-				<figcaption>
-					<span class="title"><h4>{{todo.title}}</h4></span>
-					<span class="price"><p>{{todo.price}}</p></span>
-					<span class="description"><p>{{todo.description}}</p></span>
+				<figcaption ng-class="{'red' : todo.completed}">
+					<div ng-hide="editing">
+						<span class="titleEdit"><h4>{{todo.title}}</h4></span>
+						<span class="priceEdit"><p>{{todo.price}}</p></span>
+						<span class="descriptionEdit"><p>{{todo.description}}</p></span>
+						<button ng-click="editing = !editing" class="edit">Edit</button>
+					</div>
+
 					<button class="delete" ng-click="delete($index, item)">X</button>
-					<button class="complete" ng-click="toggle = !toggle" ng-class="{'red' : toggle}">DONE</button>
+					<div  class="complete">
+					<input type="checkbox" ng-model="todo.completed" ng-click="edit(todo)"/>
+					Completed
+					</div>
+
+					<div ng-show="editing" class="editing">
+						<span class="title"><input placeholder="Title" ng-model="todo.title"></span>
+						<span class="price"><input placeholder="Price" ng-model="todo.price"></span>
+						<span class="description"><input placeholder="Description" ng-model="todo.description"></span>
+						<button class="doneEditing" ng-click="edit(todo); editing = !editing">DONE</button>
+
+					</div>
 				</figcaption>
 			</div>
 		</div>

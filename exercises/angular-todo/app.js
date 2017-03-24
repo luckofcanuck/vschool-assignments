@@ -35,6 +35,9 @@ app.controller("myController", ["$scope", "$http", function ($scope, $http) {
 		$scope.todos.splice(index, 1);
 	}
 
-
+	$scope.edit = function (input){
+		$http.put("http://api.vschool.io/tim/todo/" + input._id, input)
+		console.log(input)
+	}
 
 }])
