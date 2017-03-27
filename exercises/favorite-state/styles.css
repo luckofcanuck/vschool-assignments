@@ -1,0 +1,68 @@
+body {
+	background-image: url("http://www.hpud.org/wp-content/uploads/2015/08/WaterBackground2.jpg");
+	background-attachment: fixed;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	font-size: 24px;
+	color: aqua;
+}
+
+h1 {
+	text-align: center;
+	color: darkblue;
+}
+
+.flag {
+	margin-top: 200px;
+	display: block;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 164px;
+}
+
+.flag img {
+	max-width: 250px;
+	margin-left: 100px;
+}
+
+.flag .words {
+	text-align: center;
+	margin-top: 80px;
+}
+
+.about {
+	margin-top: 100px;
+	display: block;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about .info {
+	max-width: 250px;
+	margin-left: 140px;
+}
+
+.about .words {
+	max-width: 250px;
+	margin-left: 50px;
+}
+
+.whyilove {
+	margin-top: 150px;
+}
+
+.whyilove img {
+	width: 200px;
+	height: 120px
+}
+
+figcaption {
+	color: grey;
+	font-size: 16px;
+	margin-top: 5px;
+}

@@ -87,9 +87,29 @@ p {
 	text-align: center;
 }
 
-.editing {
+.editForm {
 	color: black;
 	display: block;
+}
+
+.title {
+	display: block;
+	width: 150px;
+}
+
+.price {
+	display: block;
+	width: 150px;
+}
+
+.description {
+	display: block;
+	width: 150px;
+}
+
+.doneEditing {
+	margin-left: 375px;
+	margin-bottom: 5px;
 }
 
 .invis {

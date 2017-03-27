@@ -1,7 +1,6 @@
 function isPalindrome(str) {
-	var charactersOnly = str.replace(/[^a-z_]/gi,"");
-	var newStr = charactersOnly.toLowerCase();
-	var revStr = charactersOnly.toLowerCase().split("").reverse().join("");
+	var newStr = str.replace(/[^a-z_]/gi,"").toLowerCase();
+	var revStr = newStr.split("").reverse().join("");
 	if (newStr == revStr) {
 		return true;
 	} else {
