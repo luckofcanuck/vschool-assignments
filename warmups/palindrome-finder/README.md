@@ -1,0 +1,1 @@
+I created a function that takes a string and determines whether or not it is a palindrome. Punctuation and special characters do not affect the functionality of the code. 
