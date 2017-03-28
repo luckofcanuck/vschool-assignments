@@ -1,0 +1,1 @@
+I created a function that looks through an array containing numbers, strings, arrays, and objects, and splits the larger array into smaller arrays of similar data types.
