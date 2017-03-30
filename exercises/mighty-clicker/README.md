@@ -1,0 +1,1 @@
+This is an app that has two buttons and two counters. When a button is pressed its respective counter increments while its opposite loses value. If either counter reaches zero, the game resets. 

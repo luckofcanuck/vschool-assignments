@@ -2,7 +2,7 @@
 //example:
 
 
-var input = ["cat", [1, 2 ,3], "dog", 1, 4, {name: "john"}, ["pie", "cake"]];
+var given = ["cat", [1, 2 ,3], "dog", 1, 4, {name: "john"}, ["pie", "cake"]];
 
 function splitArr(input){
 	
@@ -29,4 +29,4 @@ function splitArr(input){
 	
 }
 
-splitArr(input);
+splitArr(given);

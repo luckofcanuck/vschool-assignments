@@ -1,0 +1,1 @@
+I wrote three different functions that convert a number into standard dollar formats.

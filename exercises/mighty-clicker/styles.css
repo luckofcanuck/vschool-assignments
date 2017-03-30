@@ -1,0 +1,57 @@
+.redButton {
+	position: absolute;
+	background-color: red;
+	top: 40%;
+	left: 33%;
+	width: 100px;
+	margin-left: -50px;
+	height: 50px;
+	color: blue;
+	border-width: 1px 4px 4px 1px;
+	border-color: white;
+}
+
+.blueButton {
+	position: absolute;
+	background-color: blue;
+	top: 40%;
+	left: 66%;
+	width: 100px;
+	margin-left: -50px;
+	height: 50px;
+	color: red;
+	border-width: 1px 1px 4px 4px;
+	border-color: white;
+}
+
+.redCounter {
+	position: absolute;
+	top: 30%;
+	left: 33%;
+	width: 50px;
+	margin-left: -25px;
+	text-align: center;
+	color: darkred;
+	text-shadow: 2px 2px white;
+}
+
+.blueCounter {
+	position: absolute;
+	top: 30%;
+	left: 66%;
+	width: 50px;
+	margin-left: -25px;
+	text-align: center;
+	color: darkblue;
+	text-shadow: -2px 2px white;
+}
+
+
+html,
+body {
+	background-color: lavender;
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
