@@ -1,0 +1,64 @@
+input {
+	display: block;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+button {
+	display: block;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.head {
+	background: blue;
+	width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
+
+.title {
+	font-size: 24px;
+	font-style: oblique;
+	text-align: center;
+}
+
+.descrip {
+	font-size: 10px;
+	text-align: center;
+}
+
+.image img {
+	max-width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+footer {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+	text-align: right;
+	padding-top: 80px;
+	font-style: oblique;
+	color: blue;
+}

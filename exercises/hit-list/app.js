@@ -1,14 +1,10 @@
 var app = angular.module("myApp", []);
 
-app.controller("myController", ["$scope", "$http", function($scope, $http){
+app.controller("myController", ["$scope", "serviceService", function($scope, serviceService){
 	
-
-	
-	$http.get("http://api.vschool.io:6543/hitlist.json")
-		.then(function (response){
-		$scope.hits = response.data;
-		console.log(hits);
-	})
-	
+	serviceService.getStuff().then(function(hits){
+			$scope.hits = hits;
+			console.log($scope.hits)
+		})
 	
 }])

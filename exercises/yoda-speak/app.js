@@ -1,6 +1,6 @@
 var app = angular.module("myApp", []);
 
-app.controller("myController", ["$scope", "$http", function ($scope, $http) {
+app.controller("myController", ["$scope", "serviceService", function ($scope, serviceService) {
 
 	var config = {
 		headers: {
@@ -8,10 +8,12 @@ app.controller("myController", ["$scope", "$http", function ($scope, $http) {
 		}
 	}
 
+
+
 	$scope.submission = function () {
-		$http.get("https://yoda.p.mashape.com/yoda?sentence=" + $scope.userInput, config)
-			.then(function (response) {
-				$scope.textResp = response.data;
-			})
-	}
+		serviceService.getYoda($scope.userInput, config).then(function(yodaResp){
+			$scope.textResp = yodaResp;
+		}
+)}
+	
 }])

@@ -1,0 +1,1 @@
+Simple angular page that uses a service stores information a user enters, and that uses a controller to call the info from the service and display it on the page. 

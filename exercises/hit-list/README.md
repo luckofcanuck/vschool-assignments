@@ -1,1 +1,1 @@
-Used angular to get information from an api, designed a simple webpage to display it. 
+Used angular to get information from an api, designed a simple webpage to display it. 3/30 changed to incorporate services.

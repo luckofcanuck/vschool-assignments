@@ -1,1 +1,1 @@
-I use angular to get, post, and delete items from an api on a simple webpage. 
+I use angular to get, post, and delete items from an api on a simple webpage. I updated this app to use services for the http requests.
