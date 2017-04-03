@@ -1,0 +1,1 @@
+I wrote a function that returns any given string without its first and last characters.

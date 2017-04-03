@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Convert Temperatures</title>
+</head>
+<body ng-controller="myController">
+ 
+ <div class="examples">
+ Pick a temperature to display.
+ <select name="singleSelect" ng-model="data.singleSelect">
+ 	<option value='f'>Fahrenheit</option>
+ 	<option value='k'>Kelvin</option>
+ 	<option value='c'>Fahrenheit to Celcius</option>
+ </select>
+ 
+ <div ng-show="data.singleSelect === 'f'">
+   	Current temperature in Fahrenheit: {{weather}}<br><br>
+   	
+   	Examples of Celcius to Fahrenheit conversions:
+   	<div class="convs" ng-repeat="item in temps">
+ 	Celcius: {{item}} Fahrenheit: {{item | toFahrenheit}}
+ 	</div>
+ </div>
+ 
+ <div ng-show="data.singleSelect === 'k'">
+   	Current temperature in Kelvin: {{weather | toKelvin}}<br><br>
+   	
+   	Examples of Celcius to Fahrenheit conversions:
+   	<div class="convs" ng-repeat="item in temps">
+ 	Celcius: {{item}} Kelvin: {{item | toKelvin}}
+ 	</div>
+ </div>
+ 
+ <div ng-show="data.singleSelect === 'c'">
+   	Current temperature in Celcius: {{weather | toCelcius}}<br><br>
+   	
+   	Examples of Fahrenheit to Celcius conversions:
+   	<div class="convs" ng-repeat="item in temps">
+ 	Celcius: {{item}} Fahrenheit: {{item | toCelcius}}
+ 	</div>
+ </div>
+ </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ <script src="app.js"></script>	
+ <script src="service.js"></script>
+</body>
+</html>
