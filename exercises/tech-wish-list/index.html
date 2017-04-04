@@ -3,43 +3,30 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Favorite State</title>
+	<title>Tech Wish List</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 
-
-
 <body>
-
 	<nav>
-		<a href="index.html">Home</a>
-		<a href="#/about">About</a>
-		<a href="#/whyilove">Why I Love It</a>
+		<a href="#/commonTech">Common</a>
+		<a href="#/extraTech">Extra</a>
 	</nav>
 
-	<h1>My Favorite State is Liquid</h1>
 
-	<div class="row flag">
-		<div class="col-xs-6 words">
-			The Official Flag of Liquid is:
-		</div>
-		<div class="col-xs-6"></div><img src="http://www.centralelgin.org/sites/centralelgin.civicwebcms.com/files/media/Beaches/4469.jpg">
-	</div>
-	
-	
 	<ng-view></ng-view>
-	
-	<mike-the-mink></mike-the-mink>
+
 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
 	<script src="app.js"></script>
-	<script src="about/about.js"></script>
-	<script src="whyilove/whyilove.js"></script>
+	<script src="directives/directives.js"></script>
+	<script src="commonTech/commonTech.js"></script>
+	<script src="extraTech/extraTech.js"></script>
 </body>
 
 </html>

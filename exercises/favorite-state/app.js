@@ -14,3 +14,12 @@ var app = angular.module("myApp", ["ngRoute"])
 				redirectTo: "/index.html"
 		})
 }]);
+
+app.directive("mikeTheMink", function(){
+	return {
+		template: "<img ng-hide='open' ng-mouseover='open = true' src='http://coursework.vschool.io/content/images/2015/06/download.jpg'/>"
+	}
+})
+
+
+
