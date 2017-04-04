@@ -18,26 +18,11 @@ app.config(["$routeProvider", function ($routeProvider) {
 
 app.service("bookService", function ($http) {
 
-	this.getReviews = function (userInput) {
-//		var config = {
-//			transformResponse: function(value) {
-//				console.log(value);
-//				return value;
-//			}
-//		}
-		return $http.get("http://www.goodreads.com/book/title.json?format=json&key=pQ8fexiuU74u8Grhz54g&title=to kill a mockingbird").then(function (response) {
-			console.log(response.data);
-//			var reviews = response.data;
-//			return reviews;
-		})
-	}
+
 	
 	
 	this.getAuthor = function (userAuthor) {
-		return $http.get("http://www.goodreads.com/api/author_url/Stephen King&key=pQ8fexiuU74u8Grhz54g").then(function (response) {
-			console.log(response.data);
-	})
-		
+		return $http.get("http://openlibrary.org/search.json?author=" + userAuthor);
 	}
 })
 

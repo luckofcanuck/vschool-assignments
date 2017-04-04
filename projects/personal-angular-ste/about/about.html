@@ -1,12 +1,11 @@
-here
+<input placeholder="works by an author" ng-model="userInput"/>
+<button ng-click="submit()">submit</button>
 
 
-{{test}}
-
-
-{{reviews}}
-
-
-
-
-<a href="http://www.goodreads.com/book/title?format=json&key=pQ8fexiuU74u8Grhz54g&title=to kill a mockingbird"></a>
+<div ng-repeat="info in authorInfo track by $index" class="newEntry">
+	<span class="titleEdit"><h4>{{info.title}}</h4></span>
+	<span class="titleEdit"><h4>{{info.subtitle}}</h4></span>
+	<span class="priceEdit"><p>{{info.isbn[0]}}</p></span>
+	<span class="priceEdit"><p>{{info.isbn[1]}}</p></span>
+	<span class="priceEdit"><p>{{info.isbn[2]}}</p></span>
+</div>

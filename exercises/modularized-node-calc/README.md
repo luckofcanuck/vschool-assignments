@@ -1,0 +1,1 @@
+This is a program that uses readline sync and allows a user to enter numbers and an operation to be performed. The respective numbers and operation are called through various node module patterns. 
