@@ -1,4 +1,16 @@
-hello
+<div ng-repeat="todo in todos track by $index">
+	<span class="title"><h4>{{todo.title}}</h4></span>
+	<span class="author">{{todo.imgUrl}}</span>
+	<span class="description"><p>{{todo.description}}</p></span>
+	<button class="more" ng-click="clickedHome(todo.imgUrl)">More From This Author</button>
+</div>
 
 
-{{test}}
+
+
+<div class="form">
+	<input placeholder="New Entry Title" ng-model="newTodo.title">
+	<input placeholder="New Author Written About" ng-model="newTodo.imgUrl">
+	<input placeholder="New Body" ng-model="newTodo.description">
+	<button ng-click="newTodoSub(newTodo)">Submit</button>
+</div>

@@ -1,0 +1,1 @@
+This exercise uses angular directives and filters to display different information depending on which controller is being used, which ng-view is active, and which form of currency is selected by the user. 

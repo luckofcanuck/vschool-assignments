@@ -1,5 +1,8 @@
-<div>
+<div class="wishItem">
         <img ng-src="{{wish.imageUrl}}"/>
         <h4>Wish Item Name: {{wish.item}}</h4>
-        <h2>Price: {{wish.price}}</h2>
+        <h2 ng-hide="data.singleSelect === 'e'">Price: {{wish.price}}</h2>
+        <h2 ng-show="data.singleSelect === 'e'">Price: {{wish.price | toEuros}}</h2>
 </div>
+
+

@@ -2,13 +2,13 @@ var app = angular.module("myApp", ["ngRoute"]);
 
 app.config(["$routeProvider", function ($routeProvider) {
 	$routeProvider
-		.when("/about", {
+		.when("/more-authors", {
 			controller: "aboutController",
-			templateUrl: "about/about.html"
+			templateUrl: "more-authors/more-authors.html"
 		})
-		.when("/whyilove", {
+		.when("/contact", {
 			controller: "loveController",
-			templateUrl: "whyilove/whyilove.html"
+			templateUrl: "contact/contact.html"
 		})
 		.when("/home", {
 			controller: "homeController",
@@ -18,20 +18,91 @@ app.config(["$routeProvider", function ($routeProvider) {
 
 app.service("bookService", function ($http) {
 
+	this.author = "";
 
-	
-	
 	this.getAuthor = function (userAuthor) {
-		return $http.get("http://openlibrary.org/search.json?author=" + userAuthor);
+		return $http.get("http://openlibrary.org/search.json?author=" + userAuthor).then(function (response) {
+
+			var authorInfo = [];
+			var preAuthorInfo = [];
+
+			var otherBooks = response.data.docs;
+
+			for (var i = 0; i < otherBooks.length; i++) {
+				function loweredSub(input) {
+					if (input) {
+						return input.toLowerCase();
+					}
+				}
+				var bookObject = {
+					title: otherBooks[i].title.toLowerCase(),
+					subtitle: loweredSub(otherBooks[i].subtitle),
+					//					isbn: otherBooks[i].isbn,
+				}
+				preAuthorInfo.push(bookObject);
+			}
+
+			for (var i = 0; i < preAuthorInfo.length; i++) {
+				var isUnique = true
+				for (var j = 0; j < authorInfo.length; j++) {
+					if (preAuthorInfo[i].title === authorInfo[j].title && preAuthorInfo[i].subtitle === authorInfo[j].subtitle) {
+						isUnique = false
+					}
+				}
+				
+				if (isUnique) {
+					authorInfo.push(preAuthorInfo[i]);
+				}
+			}
+			return authorInfo;
+		})
 	}
+	
+	
+	this.getTodos = function () {
+		var todos = "";
+		return $http.get("http://api.vschool.io/tim/todo")
+			.then(function (response) {
+				todos = response.data;
+				return todos;
+			})
+
+	}
+	
+	this.submit = function(input) {
+		return $http.post("http://api.vschool.io/tim/todo/", input)
+		.then(function(response){
+			input = {};
+			return response.data;
+			});
+
+
+	}
+	
+
+
 })
 
+app.filter("capitalize", function () {
+	return function (input) {
+		if (input === undefined) {
 
-
-
-//	this.getTemp = function(){
-//		return $http.jsonp("https://api.darksky.net/forecast/848c374203fe14c192f3c6a7cfe43c9f/40.87608,-111.8910?callback=JSON_CALLBACK").then(function(response){
-//			var currentTemp = response.data.currently.temperature;
-//			return currentTemp;
-//		})
-//
+		} else {
+			var returnedString = "";
+			returnedString += input[0].toUpperCase();
+			for (var i = 1; i < input.length; i++) {
+				if (input[i] === " ") {
+					returnedString += " " + input[i + 1].toUpperCase();
+					i++
+				} else if (input[i] === "(" || input[i] === "-") {
+					returnedString += input[i];
+					returnedString += input[i + 1].toUpperCase();
+					i++
+				} else {
+					returnedString += input[i];
+				}
+			}
+			return returnedString;
+		}
+	}
+})

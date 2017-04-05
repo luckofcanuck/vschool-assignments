@@ -1,0 +1,47 @@
+.wishItem {
+	background-color: black;
+	width: 500px; 
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wishItem img {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 50px;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+h4 {
+	text-align: center;
+}
+
+nav a {
+	font-size: 24px;
+}
+
+nav {
+	position: relative;
+	padding-bottom: 80px;
+}
+
+nav .common {
+	position: absolute;
+	width: 120px;
+	margin-left: -60px;
+	left: 33%;
+}
+
+nav .extra {
+	position: absolute;
+	width: 120px;
+	margin-left: -60px;
+	left: 66%;
+}

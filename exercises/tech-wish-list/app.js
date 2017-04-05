@@ -18,14 +18,8 @@ app.config(["$routeProvider", function ($routeProvider) {
 
 app.filter("toEuros", function(){
 	return function(price){
-		var output = Math.round((temp - 32) * 5.0 / 9.0);
+		var output = (price * .94);
 		return output;
 	}
 })
 
-app.filter("toDollars", function(){
-	return function(price){
-		var output = Math.round(temp * 9.0 / 5.0 + 32);
-		return output;
-	}
-})

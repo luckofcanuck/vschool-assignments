@@ -1,0 +1,11 @@
+<input placeholder="works by an author" ng-model="userInput"/>
+<button ng-click="submit()">submit</button>
+
+
+<div ng-repeat="info in authorInfo | limitTo: 25 track by $index" class="newEntry">
+	<span class="title"><h4>{{info.title | capitalize}}</h4></span>
+	<span class="subtitle"><h6>{{info.subtitle | capitalize}}</h6></span>
+	<span class="isbn1"><p>{{info.isbn[0]}}</p></span>
+	<span class="isbn2"><p>{{info.isbn[1]}}</p></span>
+	<span class="isbn3"><p>{{info.isbn[2]}}</p></span>
+</div>
