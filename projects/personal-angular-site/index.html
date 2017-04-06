@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Books</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<nav>
+		<div class="container-fluid myNav">
+				<ul>
+					<li>
+						<a href="#/home" class="draw">Home<span></span></a>
+					</li>
+					<li>
+						<a href="#/blog" class="draw">Blog</a>
+					</li>
+					<li>
+						<a href="#/contact" class="draw">Contact</a>
+					</li>
+				</ul>
+		</div>
+	</nav>
+	
+	
+
+
+<ng-view></ng-view>
+
+
+
+       
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>	
+<script src="home/home.js"></script>
+<script src="contact/contact.js"></script>
+<script src="blog/blog.js"></script>
+</body>
+</html>

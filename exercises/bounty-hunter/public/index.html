@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bounty</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--	<link rel="stylesheet" href="styles.css">-->
+</head>
+
+<body ng-controller="myController">
+
+	<div class="form">
+		<input placeholder="first name" ng-model="newBounty.firstName">
+		<input placeholder="last name" ng-model="newBounty.lastName"> Living?
+		<input type="checkbox" ng-model="checked">
+		<input type="number" placeholder="What is the price on his/her head?" ng-model="newBounty.bountyAmount">
+		<button ng-click="submit(newBounty)">Submit</button>
+	</div>
+
+	<div ng-repeat="bounty in bounties track by $index">
+		<div class="info" ng-hide="editing">
+			Name: {{bounty.firstName + " " + bounty.lastName}}. Living? {{bounty.living}}. Bounty Amount: {{bounty.bountyAmount | currency: "$"}}.
+			<button ng-click='delete($index)'>x</button>
+		</div>
+		
+		<div class="editForm" ng-hide="!editing">
+			<input placeholder="{{bounty.firstName}}" ng-model="bounty.firstName">
+			<input placeholder="{{bounty.lastName}}" ng-model="bounty.lastName"> Living?
+			<input type="checkbox" ng-model="checked">
+			<input type="number" placeholder="{{bounty.bountyAmount}}" ng-model="bounty.bountyAmount">
+			<button ng-click="put(bounty); editing = !editing">Submit Changes</button>
+		</div>
+		<button ng-click="editing = !editing" ng-hide="editing">Edit</button>
+	</div>
+
+
+	<ng-view></ng-view>
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="bounty.js"></script>
+	<script src="services.js"></script>
+</body>
+
+</html>

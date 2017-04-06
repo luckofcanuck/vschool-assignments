@@ -1,0 +1,27 @@
+<div class="homeContainer">
+	<div class="entriesContainer">
+		<div class="container newEntriesContainer">
+			<div ng-repeat="todo in todos track by $index" class="entry">
+				<span class="entryTitle"><h4>{{todo.title}}</h4></span>
+				<div class="entryDescription"><p>{{todo.description | limitTo: 2000}}<span ng-click="moreText = !moreText" ng-hide="moreText">[<span  class="dots">...</span>]</span><span ng-show="moreText">{{todo.description | limitTo: 100000000: 2000}}</span></p></div>
+				<div class="line"></div>
+				<button class="entryAuthor" ng-click="clickedHome(todo.imgUrl)">Works by {{todo.imgUrl}}</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="homeRightBox">
+	<div class="boxContent">
+	<p ng-click="clickedHome('jorge luis borges')">"Once you learn to read, you will be forever free." <br> <span class="quoteAuthor">-Jorge Luis Borges</span></p>
+	<div class="smallLine"></div>
+	<p ng-click="clickedHome('mark twain')">"The man who does not read good books is not better than the man who can't." <br> <span class="quoteAuthor">-Mark Twain</span></p>
+	<div class="smallLine"></div>
+	<p ng-click="clickedHome('ralph waldo emerson')">"If we encounter a man of rare intellect, we should ask him what books he reads." <br> <span class="quoteAuthor">-Ralph Waldo Emerson</span></p>
+	<div class="smallLine"></div>
+	<p class="last" ng-click="clickedHome('toni morrison')">"If there is a book that you want to read, but it hasn't been written yet, you must be the one to write it." <br> <span class="quoteAuthor">-Toni Morrison</span></p> 
+	</div>
+		
+
+
+	</div>	
+</div>

@@ -19,6 +19,7 @@ app.controller("myController", ["$scope", "todoService", function ($scope, todoS
 	}
 
 
+
 	$scope.delete = function (index) {
 		var item = $scope.todos[index]
 		todoService.delete(item).then(function(data){
