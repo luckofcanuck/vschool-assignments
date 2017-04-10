@@ -2,8 +2,8 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 var port = 3000;
+var mongoose = require("mongoose");
 var path = require("path");
-var port = 3000;
 app.use(bodyParser.json());	
 app.use(express.static(path.join(__dirname, "public")));
 app.use(function(req, res, next){
@@ -12,10 +12,19 @@ app.use(function(req, res, next){
 	res.send();
 })
 
+mongoose.connect("mongodb://localhost/bounty");
+	var db = mongoose.connection;
+    db.on('error', console.error.bind(console, 'connection error:'));
+    db.once('open', function callback () {
+          console.log("DB connected");
+    });
+
+
 
 
 var bountyRouter = require("./route");
 app.use("/bounty", bountyRouter);
+
 
 
 

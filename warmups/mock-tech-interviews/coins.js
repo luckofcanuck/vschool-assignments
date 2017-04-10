@@ -25,14 +25,14 @@ function coverValue(arr, coin){
 		arrayTotal = arrayTotal + arr[i];
 	}
 	if (coin === "penny"){
-			coin = 1;
-		} else if (coin === "nickel"){
-			coin = 5;
-		} else if (coin === "dime"){
-			coin = 10;
-		} else if (coin === "quarter"){
-			coin = 25;
-		}
+		coin = 1;
+	} else if (coin === "nickel"){
+		coin = 5;
+	} else if (coin === "dime"){
+		coin = 10;
+	} else if (coin === "quarter"){
+		coin = 25;
+	}
 	return Math.ceil(arrayTotal/coin);
 }
 

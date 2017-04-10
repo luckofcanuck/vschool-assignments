@@ -1,0 +1,1 @@
+This is a backend program using express and string queries to find items that match the queries in a given array. 
