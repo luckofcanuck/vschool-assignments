@@ -1,0 +1,1 @@
+These are two functions I wrote in a mock whiteboarding interview. I had to talk through them as I wrote them, and I wrote the code moments after reading instructions for what they were intended to do. 

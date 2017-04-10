@@ -5,7 +5,7 @@ app.controller("homeController", ["$scope", "$location", "bookService", function
 
 	$scope.clickedHome = function (gathered) {
 		bookService.author = gathered;
-		$location.url("home");
+		$location.url("/home");
 	}
 
 

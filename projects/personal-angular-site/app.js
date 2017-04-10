@@ -14,11 +14,12 @@ app.config(["$routeProvider", function ($routeProvider) {
 			controller: "homeController",
 			templateUrl: "blog/blog.html"
 		})
+		.otherwise({
+			redirectTo: "/home"
+		})
 }]);
 
 app.service("bookService", function ($http) {
-
-	this.author = "";
 
 	this.getAuthor = function (userAuthor) {
 		return $http.get("http://openlibrary.org/search.json?author=" + userAuthor).then(function (response) {

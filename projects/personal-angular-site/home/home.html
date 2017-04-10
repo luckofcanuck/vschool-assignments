@@ -1,12 +1,12 @@
 <div class="container authorsContainer">
-	<input placeholder="Find Works by an Author" ng-model="userInput" class="authorBar" />
+	<input placeholder="find works by an author" ng-model="userInput" class="authorBar" />
 	<button ng-click="submit()" class="authorButton">submit</button>
 
 	<div class="newAuthorsContainer">
 		<div ng-repeat="info in authorInfo | limitTo: 25 track by $index" class="newAuthor">
 			<span class="title"><h4>{{info.title | capitalize}}</h4></span>
 			<span class="subtitle"><h6>{{info.subtitle | capitalize}}</h6></span>
-			<a ng-href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={{info.isbn}}" class="findLink">Find on Amazon</a>
+			<a ng-href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={{info.isbn}}" class="findLink" class="amazon">Find on Amazon</a>
 		</div>
 	</div>
 </div>

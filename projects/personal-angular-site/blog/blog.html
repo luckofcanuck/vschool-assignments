@@ -3,7 +3,7 @@
 		<div class="container newEntriesContainer">
 			<div ng-repeat="todo in todos track by $index" class="entry">
 				<span class="entryTitle"><h4>{{todo.title}}</h4></span>
-				<div class="entryDescription"><p>{{todo.description | limitTo: 2000}}<span ng-click="moreText = !moreText" ng-hide="moreText">[<span  class="dots">...</span>]</span><span ng-show="moreText">{{todo.description | limitTo: 100000000: 2000}}</span></p></div>
+				<div class="entryDescription"><p>{{todo.description | limitTo: 2000}}<span ng-click="moreText = !moreText" ng-hide="moreText">[<span  class="dots">...</span>]</span><span ng-show="moreText">{{todo.description | limitTo: 100000000: 2000}}<span ng-click="moreText = !moreText" ng-hide="!moreText"> (<span class="showLess">Show Less</span>) </span></span></p></div>
 				<div class="line"></div>
 				<button class="entryAuthor" ng-click="clickedHome(todo.imgUrl)">Works by {{todo.imgUrl}}</button>
 			</div>
