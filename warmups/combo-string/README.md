@@ -1,0 +1,1 @@
+This function compares the lengths of two strings and returns them as one in the order of (shorter, longer, shorter).
