@@ -1,0 +1,28 @@
+.commentsBox {
+	max-height: 100px;
+	border: 1px solid black;
+	overflow: scroll;
+	width: 30vw;
+}
+
+.commentWrapper {
+	border-bottom: 1px dotted black;
+	min-height: 32px;
+	width: 30vw;
+	position: relative;
+}
+
+.comment {
+	min-height: 32px;
+}
+
+.commentDelete {
+	position: absolute;
+	right: 0px;
+	height: 24px;
+	margin-top: -12px;
+	top: 50%;
+	max-width: 10px;
+	text-align: center;
+}
+
