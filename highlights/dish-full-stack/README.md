@@ -1,0 +1,1 @@
+This is a full stack app that allows users to enter information about their favorite food dishes. Once entered, that dish is stored in the database. Users can search the database by restaurant names, location, calorie count, dietary restrictions, or all of the above and more, to find dishes that match what they are trying to find.

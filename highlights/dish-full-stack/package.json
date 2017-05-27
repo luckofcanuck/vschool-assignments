@@ -1,0 +1,21 @@
+{
+  "name": "full-stack-app",
+  "version": "1.0.0",
+  "description": "User will be able to add a dish with a minimum amount of required information to a database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.4",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {}
+}

@@ -3,6 +3,7 @@
 	padding-right: 20px;
 	font-size: 12px;
 	margin-top: 10px;
+	font-family: "Martel Sans", sans-serif;
 }
 
 .navbar .navbar-nav {
@@ -422,7 +423,7 @@ footer {
 }
 
 .socialBoxBig {
-	width: 25%;
+	width: 20%;
 	position: absolute;
 	border: 1px solid lightgrey;
 	height: 50px;
@@ -452,7 +453,7 @@ footer {
 }
 
 .subscriptionBig {
-	width: 25%;
+	width: 20%;
 	position: absolute;
 	border: 1px solid lightgrey;
 	height: 100px;
@@ -497,7 +498,7 @@ footer {
 	height: 300px;
 	left: 75%;
 	top: 250px;
-	width: 25%;
+	width: 20%;
 	height: 150px;
 }
 
@@ -528,7 +529,7 @@ footer {
 
 
 .logosBig {
-	width: 25%;
+	width: 20%;
 	position: absolute;
 	border: 1px solid lightgrey;
 	margin-top: 50px;
@@ -560,7 +561,7 @@ footer {
 	position: absolute;
 	left: 75%;
 	top: 1250px;
-	width: 25%;
+	width: 20%;
 	border: 1px solid lightgrey;
 	margin-top: 25px;
 	font-family: "Work Sans", sans-serif;

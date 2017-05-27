@@ -1,0 +1,220 @@
+<h1>/user/belly $ get init -y</h1>
+<i class="fa fa-plus-square-o fa-2x firsti" ng-click="editing = !editing" ng-hide="editing || advanced"></i>
+
+<div class="searchBar" ng-hide="editing || advanced">
+		<input placeholder="What are you in the mood for?" ng-model="quick" class="searchInput" />
+
+			<button ng-click="getAll(quick)" class="searchButton">Search</button>
+
+			<button class="advancedButton" ng-click="advanced = !advanced">Advanced Search</button>
+
+
+</div>
+
+<div class="advancedForm" ng-show="advanced">
+	<h4>What are you really looking for...</h4>
+	<i class="fa fa-minus-square-o fa-2x pull-right secondi" aria-hidden="true" ng-click="advanced = !advanced"></i>
+	<div class="advName">Do you know the name of your desired dish?<input placeholder="Dish Name" ng-model="adv.Name"></div>
+	<div class="advRestaurant">Do you know which restaurant you'd like to see dishes from?<input placeholder="Restaurant Name" ng-model="adv.Restaurant"></div>
+	<div class="advCity">Would you like to see dishes in a particular area?<input placeholder="City" ng-model="adv.City"></div>
+	<div class="advMain">Are you in the mood for chicken? Salad? Pho? Try entering a star ingredient of a dish you might like... <input placeholder="Star Ingredient" ng-class="adv.Main"></div>
+	<div class="advCountry">Would you like something from Japan? Brazil?<input placeholder="Country of Origin" ng-model="adv.Country"></div>
+	<div class="advPrice">How much are you willing to spend?
+	<select class="advPrice" name="Priceyness" ng-model="adv.Price">
+		<option value="Frugal Eats <$10">Less than $10</option>
+		<option value="Date Night <$20">Less than $20</option>
+		<option value="High Roller >$20">More than $20</option>
+	</select>
+	</div>
+	<div class="advLight">Would you prefer something light like a salad? Or, hearty like a steak?
+		<select name="Lightness" ng-model="adv.Light">
+			<option value="Very Light">Very Light</option>
+			<option value="Light">Light</option>
+			<option value="Average">Average</option>
+			<option value="Heavy">Heavy</option>
+			<option value="Very Heavy">Very Heavy</option>
+		</select>
+	<div class="advCal">
+		Would you like to restrict results by a maximum calorie count?<input type=number ng-model="adv.Cal" />
+	</div>
+	</div>
+	<div class="advChain">Do you want more of a local vibe or a culinary mogul?
+		<select name="chain" ng-model="adv.Chain">
+			<option value="true">Chain Restaurant</option>
+			<option value="false">No Chains</option>
+		</select>
+	</div>
+	<div class="advDiet">Any dietary restrictions?
+		<span class="advVeg"><input type=checkbox ng-model="adv.Veg"> <h6>Vegetarian</h6></span>
+		<span class="advGluten"><input type=checkbox ng-model="adv.Gluten"> <h6>Gluten Free</h6></span>
+		<span class="advNut"><input type=checkbox ng-model="adv.Nut"> <h6>Nut Free</h6></span>
+	</div>
+	<div class="advAlcohol">Do you want drinks with your meal?
+		<span class="advAlc"><input type=checkbox ng-model="adv.Alcohol"><h6>Yes</h6></span>
+	</div>
+	<button ng-click="advSearch(adv); advanced = !advanced">Search</button>
+</div>
+
+
+
+
+
+
+<div class="newDishForm" ng-show="editing">
+<h4>New Dish Entry:</h4>
+<i class="fa fa-minus-square-o fa-2x pull-right thirdi" aria-hidden="true" ng-click="editing = !editing"></i>
+<div class="inputs">
+	<input class="newName" placeholder="Dish Name" ng-model="newDish.dishName">
+
+	<input class="newMain" placeholder="Star Ingredient" ng-model="newDish.mainDishIngredient">
+	<input class="newOthers" placeholder="Other Ingredients" ng-model="newDish.otherDishIngredients">
+	<input class="newSides" placeholder="Available Sides" ng-model="newDish.sidesToDish">
+	<input class="newCountry" placeholder="Country of Origin" ng-model="newDish.countryOfFoodOrigin">
+	<input class="newRestaurant" placeholder="Restaurant" ng-model="newDish.dishRestaurant">
+	<input class="newCity" placeholder="City of Restaurant" ng-model="newDish.cityOfRestaurant">
+	<div class="container-fluid">
+		<div class="row secondRow">
+			<div class="col-xs-12 col-sm-6">
+				<div class="checks">
+				<span class="newVeg"><input type=checkbox ng-model="newDish.vegetarian"> Vegetarian</span>
+				<span class="newGluten"><input type=checkbox ng-model="newDish.glutenFree"> Gluten Free</span>
+				<span class="newNut"><input type=checkbox ng-model="newDish.nutFree"> Nut Free</span>
+				<span class="newAlcohol"><input type=checkbox ng-model="newDish.isAlcoholServed"> Serves Alcohol</span>
+				<span class="newChain"><input type=checkbox ng-model="newDish.isRestaurantChain"> Chain Restaurant</span>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<span class="newCalories"><input type=number ng-model="newDish.calories" /> Calories</span>
+				<div class="selects">
+				<span class="newLight">
+				<select name="Lightness" ng-model="newDish.lightness">
+					<option value="Very Light">Very Light</option>
+					<option value="Light">Light</option>
+					<option value="Average">Average</option>
+					<option value="Heavy">Heavy</option>
+					<option value="Very Heavy">Very Heavy</option>
+				</select>
+				 Lightness
+				</span>
+				<span class="newPrice">
+				<select name="Priceyness" ng-model="newDish.price">
+					<option value="Frugal Eats <$10">Less than $10</option>
+					<option value="Date Night <$20">Less than $20</option>
+					<option value="High Roller >$20">More than $20</option>
+				</select>
+				 Price
+				</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	</div>
+	<button ng-click="submitNew(newDish); editing = !editing" ng-disabled="!(!!newDish.dishName && !!newDish.mainDishIngredient && !!newDish.otherDishIngredients && !!newDish.sidesToDish && !!newDish.dishRestaurant && !!newDish.cityOfRestaurant && !!newDish.lightness && !!newDish.price)">Submit</button>
+</div>
+
+
+
+
+
+<div ng-repeat="dish in dishes track by $index" ng-hide="editing || advanced">
+<!--	<div class="yelp" ng-click="getYelp(dish.dishRestaurant, dish.cityOfRestaurant)">Find on Yelp</div>-->
+<div class="container-fluid dishDisplay">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3 ng-class="{'red' : dish.flaggedForRevision}">{{dish.dishName}}</h3> {{dish.price}}
+		</div>
+	</div>
+	<div class="row restaurant">
+		<div class="col-xs-12 col-sm-6">
+			<h5>{{dish.dishRestaurant}}</h5>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<h5>{{dish.cityOfRestaurant}}</h5>
+		</div>
+	</div>
+	<div class="row main odd">
+		<div class="col-xs-12 col-sm-6">
+			This dish primarily consists of:
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			{{dish.mainDishIngredient}}
+		</div>
+	</div>
+	<div class="row others">
+		<div class="col-xs-12 col-sm-6">
+			This dish also contains:
+		</div>
+		<span class="col-xs-12 col-sm-6 lists ingredList">
+			<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+			<div ng-repeat="ingredientList in dish.otherDishIngredients">
+				{{ingredientList}}
+			</div>
+			<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+		</span>
+	</div>
+	<div class="row sides odd">
+		<div class="col-xs-12 col-sm-6">
+			You can eat this dish with:
+		</div>
+		<span class="col-xs-12 col-sm-6 lists sideList">
+		<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+			<div ng-repeat="sideList in dish.sidesToDish">
+				{{sideList}}
+			</div>
+		<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+		</span>
+	</div>
+	<div class="row country">
+		<div class="col-xs-12 col-sm-6">
+			This dish originated in:
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			{{dish.countryOfFoodOrigin}}
+		</div>
+	</div>
+	<div class="row odd">
+		<div class="col-xs-12 col-sm-6">
+			This dish is good if you're in the mood for something:
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			{{dish.calories}} Calories -  {{dish.lightness}}
+		</div>
+	</div>
+	<div class="row checkers">
+		<div class="col-xs-2 alcy">
+			{{dish.isAlcoholServed}}
+		</div>
+		<div class="col-xs-2 vegy">
+			{{dish.vegetarian}}
+		</div>
+		<div class="col-xs-2 gluty">
+			{{dish.glutenFree}}
+		</div>
+		<div class="col-xs-2 nuty">
+			{{dish.nutFree}}
+		</div>
+		<div class="col-xs-2 resty">
+			{{dish.isRestaurantChain}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-2 col-xs-offset-3">
+			<button ng-click='up(dish)' class="up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+		</div>
+		<div class="col-xs-2 votes">
+			{{dish.totalVotes}}
+		</div>
+		<div class="col-xs-2">
+			<button ng-click='down(dish)' class="up"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+		</div>
+	</div>
+
+	<button ng-click="flag(dish)" class="flag"><i class="fa fa-flag" aria-hidden="true"ng-class="{'red' : dish.flaggedForRevision}"></i></button>
+
+
+</div>
+
+</div>
